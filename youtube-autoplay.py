@@ -14,13 +14,12 @@ search = ""
 display = ""
 for x in range(1, arg):
     search += sys.argv[x]
+    display += sys.argv[x]
     if (x == arg-1):
         break
     search += "+"
 
-print search
-
-print "\n Now Playing " + search
+print "\n Now Playing " + display
 browser = webdriver.Chrome("C:\Program Files\chromedriver_win32\chromedriver")
 
 
